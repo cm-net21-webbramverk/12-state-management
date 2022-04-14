@@ -26,9 +26,30 @@ body {
 	flex-grow: 1;
 }
 .app.dark main {
-	background-color: #201F20;
+	background-color: #645945;
 	color: #F1E7D3;
 }
 .app button {
+	background-color: #AC7911;
+	color:#F5ECD8;
+	border-radius: 0.5em;
+	border: none;
+	padding: 0.3em 1.2em;
+	margin: 0.2em;
+}
+.app button:hover {
+	cursor: pointer;
+	background-color: #705318;
+}
+.app.dark button {
+	background-color: #F5ECD8;
+	color:#AC7911;
+}
+.app.dark button:hover {
+	background-color: #EBD098;
+}
 
+.app .row {
+	display: flex;
+	flex-direction: row; 
 }

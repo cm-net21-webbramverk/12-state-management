@@ -16,8 +16,10 @@ function App() {
 			<div className={"app " + themeString}>
 				<Header />
 				<main>
-					<DoLogin name="Nisse" />
-					<DoLogin name="Pelle" />
+					<div className="row">
+						<DoLogin name="Nisse" />
+						<DoLogin name="Pelle" />
+					</div>
 				</main>
 			</div>
 		</ThemeContext.Provider>
