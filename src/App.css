@@ -53,3 +53,12 @@ body {
 	display: flex;
 	flex-direction: row; 
 }
+
+.app .products {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.app .products > * {
+	border: 1px solid darkgray;
+}

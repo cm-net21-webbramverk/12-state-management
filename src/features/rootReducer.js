@@ -1,9 +1,12 @@
 import { combineReducers } from 'redux'
 import { reducer as counter } from './counter'
+import { reducer as products } from './products'
+import { reducer as cart } from './cart'
 
 const rootReducer = combineReducers({
-	counter: counter
-	// lägg till fler reducers efter behov
+	counter: counter,
+	products,  // samma sak som:  products: products
+	cart
 })
 
 /*

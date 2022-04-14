@@ -4,6 +4,8 @@ import Header from './components/header/Header'
 import ThemeContext from './contexts/ThemeContext'
 import DoLogin from './components/main/DoLogin'
 import Counter from './components/main/Counter'
+import ProductsGrid from './components/main/ProductsGrid'
+import ViewCart from './components/main/ViewCart'
 
 function App() {
 	const [themeIsDark, setThemeIsDark] = useState(false)
@@ -22,6 +24,8 @@ function App() {
 						<DoLogin name="Pelle" />
 					</div>
 					<Counter />
+					<ProductsGrid />
+					<ViewCart />
 				</main>
 			</div>
 		</ThemeContext.Provider>
