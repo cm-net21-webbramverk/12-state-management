@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/header/Header'
 import ThemeContext from './contexts/ThemeContext'
+import DoLogin from './components/main/DoLogin'
 
 function App() {
 	const [themeIsDark, setThemeIsDark] = useState(false)
@@ -15,7 +16,8 @@ function App() {
 			<div className={"app " + themeString}>
 				<Header />
 				<main>
-				main
+					<DoLogin name="Nisse" />
+					<DoLogin name="Pelle" />
 				</main>
 			</div>
 		</ThemeContext.Provider>
