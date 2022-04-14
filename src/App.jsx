@@ -5,14 +5,14 @@ import ThemeContext from './contexts/ThemeContext'
 
 function App() {
 	const [themeIsDark, setThemeIsDark] = useState(false)
-	
+
 	const themeString = themeIsDark ? 'dark' : 'light'
 	const toggle = () => setThemeIsDark(!themeIsDark)
 	const context = { theme: themeString, toggle: toggle }
 
 	return (
 		<ThemeContext.Provider value={context} >
-			<div className="App">
+			<div className={"app " + themeString}>
 				<Header />
 				<main>
 				main

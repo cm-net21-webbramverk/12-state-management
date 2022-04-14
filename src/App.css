@@ -1,3 +1,34 @@
-.App {
-  text-align: center;
+body {
+	margin: 0em;
+	padding: 0em;
+}
+.app {
+	text-align: center;
+	background-color: #F6F1F2;
+	color: #201F20;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.app.dark {
+	background-color: #201F20;
+	color: #F6F1F2;
+}
+
+.app header {
+	padding: 0.8em 1.2em;
+	margin: 0em;
+}
+.app main {
+	padding: 0.8em 1.2em;
+	margin: 0em;
+	background-color: #F1E7D3;
+	flex-grow: 1;
+}
+.app.dark main {
+	background-color: #201F20;
+	color: #F1E7D3;
+}
+.app button {
+
 }
