@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/header/Header'
 import ThemeContext from './contexts/ThemeContext'
 import DoLogin from './components/main/DoLogin'
+import Counter from './components/main/Counter'
 
 function App() {
 	const [themeIsDark, setThemeIsDark] = useState(false)
@@ -20,6 +21,7 @@ function App() {
 						<DoLogin name="Nisse" />
 						<DoLogin name="Pelle" />
 					</div>
+					<Counter />
 				</main>
 			</div>
 		</ThemeContext.Provider>
